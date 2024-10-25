@@ -1,0 +1,218 @@
+body{
+    height: 100vh;
+    background: linear-gradient(780deg,rgb(53, 15, 15), rgb(53, 15, 15), rgb(23, 5, 23), rgb(1, 1, 14),
+                                       rgb(12, 12, 65), rgb(12, 12, 65));
+    width: 100%;
+    overflow: 80%;
+    opacity: 100%;
+    
+  }
+  
+  .top-line {
+    border-top: 1px solid #FFFFFF; /* Cor da linha */
+    width: 100%;
+    margin-left: 5px;
+    margin-top: 70px;
+    opacity: 50%;
+    
+  }
+  
+  .prt{
+    color: white;
+    font-size:22px;
+    margin-top: 30px;
+    margin-left: 420px;
+    font-family: "Archivo Black", sans-serif; 
+    text-align: left;
+  }
+
+  .prt1{
+    color: white;
+    font-size:22px;
+    margin-top: 18px;
+    margin-left: 590px;
+    font-family: "Archivo Black", sans-serif; 
+    text-align: left;
+  }
+/* ---------------------------------------------------------------- */
+.video-container {
+    background: black;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    position: relative;
+    height: 380px;
+    width: 900px;
+    margin-top: 60px;
+    margin-left: 270px;
+    opacity: 100%;
+  
+  }
+  
+  .upload-label {
+    display: block;
+    cursor: pointer;
+  }
+  
+  .upload-icon {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border: 2px solid #e1e1e1;
+    border-radius: 50%;
+    background: transparent;
+    position: relative;
+    margin-top: 120px;
+  
+  }
+  
+  .upload-icon:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-left: 15px solid #e1e1e1;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    transform: translate(-50%, -50%);
+  }
+  
+  video {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+    
+    /* ---------------------------------------------------------------- */
+
+
+    /* -------------------------------------------------------------- */
+
+    .nom{
+        color: white;
+        font-family: "Kanit", sans-serif;
+        font-size: 13px;
+        margin-left: 122px;
+        margin-top: -135px;
+        position: absolute;
+    }
+
+    /* -------------------------------------------------------- */
+
+
+  
+  /* .head{
+    color: white;
+    border: 1px solid rgb(184, 178, 178);
+    opacity: 72%;
+    width: 100%;
+    margin-left: -10px;
+    margin-top: -9px;
+    height: 75px;
+  }
+  
+  /* -------------------------------------------------------------------------- */
+  
+  .kanit-black {
+    font-family: "Kanit", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  
+  nav{
+  margin-top: -40px;
+  margin-left: 800px;
+  }
+  
+  .icn{
+    width: 79px;
+    height: 76px;
+    margin-left: 630px;
+    margin-top: -15px;
+  }
+ 
+  
+  /* -------------------------------------------------------------------------- */
+  .nome{
+    color: white;
+    margin-top: -48px;
+    margin-left: 105px;
+  }
+  
+  .archivo-black-regular {
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  
+  /* ------------------------------------------------------------------------- */
+  
+  .logo{
+    width: 75px;
+    height: 56px;
+    margin-top: -65px;
+    margin-left: 20px;
+    opacity: 100%;
+  }
+  
+  .titulo{
+    color: white;
+    margin-top: -43px;
+    margin-left: 500px;
+    font-family: "Archivo Black", sans-serif;
+    font-size: 21px ;
+  }
+  
+  .top-line {
+    border-top: 1px solid #FFFFFF; /* Cor da linha */
+    width: 100%;
+    margin-left: -8px;
+    margin-top: 70px;
+    opacity: 50%;
+    
+  }
+
+  
+  
+  /* -------------------------------------------------------------------------- */ 
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  /* Style the header */
+  .header {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Style the top navigation bar */
+  
+  
+  
+  
+  /* Style the topnav links */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }

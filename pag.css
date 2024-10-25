@@ -1,0 +1,68 @@
+body{
+    height: 94.3vh;
+    background:linear-gradient(105deg, rgb(53, 15, 15), rgb(43, 6, 32),rgb(0, 0, 0),rgb(12, 12, 65), rgb(12, 12, 65));
+    width: 100%;
+    overflow: 80%;
+   
+}
+
+.logo{
+margin-left: 630px;
+margin-top: 210px;
+width: 270px;
+height: 220px;
+}
+
+.titu{
+    color: white;
+    margin-top: -275px;
+    font-family: "Archivo Black", sans-serif;
+    text-align: center;
+    font-size: 43px;
+}
+
+.subt{
+    color: white;
+    text-align: center;
+    margin-top: 245px;
+    font-size: 15px;
+    font-family: "Kanit", sans-serif;
+}
+
+.tudo{
+    margin-top: -50px;
+}
+
+
+
+.archivo-black-regular {
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .kanit-black {
+    font-family: "Kanit", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+
+  .top-line {
+    border-top: 1px solid #FFFFFF; /* Cor da linha */
+    width: 100%;
+    margin-left: -8px;
+    margin-top: 70px;
+    opacity: 50%;
+    
+}
+  
+
+  
+
+  
+
+  
+
+
+  
+  

@@ -1,0 +1,107 @@
+/* Estilos da página */
+body{
+    height: 100vh;
+    background: linear-gradient(780deg,rgb(53, 15, 15), rgb(53, 15, 15), rgb(23, 5, 23), rgb(1, 1, 14),
+                                       rgb(12, 12, 65), rgb(12, 12, 65));
+    width: 100%;
+    overflow: 80%;
+    opacity: 100%;
+    font-family: Arial, sans-serif;
+    
+  }
+
+  .top-line {
+    border-top: 1px solid #FFFFFF; /* Cor da linha */
+    width: 100%;
+    margin-left: -10px;
+    margin-top: 40px;
+    opacity: 50%;
+    
+  }
+
+  
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: linear-gradient(180deg, #0d1a33, #640354);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.367);
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 105px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: white;
+}
+
+.ambito{
+    color: white;
+}
+
+label {
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #320082;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #1c0036;
+    color: white;
+}
+
+.tema-gerado {
+    font-size: 18px;
+    margin: 20px 0;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    display: none; /* Oculto até que o tema seja gerado */
+}
+
+
+.logo1{
+    width: 80px;
+    margin-left: -10px;
+    margin-top: -120px;
+}
+
+.logo {
+    width: 20px; /* Tamanho do botão com a imagem */
+    cursor: pointer; /* Cursor em forma de mão ao passar sobre a imagem */
+}
+
+.btn-redacao {
+    display: none; /* Oculto inicialmente */
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.btn-redacao:hover {
+    background-color: #0056b3;
+}

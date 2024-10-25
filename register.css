@@ -1,0 +1,111 @@
+body {
+    height: 80vh;
+    background: linear-gradient(780deg, rgb(53, 15, 15), rgb(53, 15, 15), rgb(23, 5, 23), rgb(1, 1, 14), rgb(12, 12, 65), rgb(12, 12, 65));
+    width: 100%;
+    overflow: 80%;
+    opacity: 100%;
+}
+
+
+.cadras {
+    margin-left: 560px;
+    margin-top: 150px;
+}
+
+form {
+    width: 340px;
+    border-radius: 26px;
+    padding: 15px;
+    height: 490px;
+    background: linear-gradient(180deg, #0d1a33, #640354);
+}
+
+.loading {
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:active {
+    opacity: 0.8;
+}
+
+button[disabled] {
+    opacity: 0.8;
+}
+
+.clear {
+    background: transparent;
+    border: none;
+    color: white;
+}
+
+.solid {
+    margin-top: 60px;
+    margin-left: 5px;
+    background: white;
+    border-radius: 25px;
+    border: none;
+    padding: 10px 110px;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+}
+
+.reg{
+    font-size: 17px;
+}
+
+.outline {
+    margin-left: 176px;
+    margin-top: -30px;
+    background: transparent;
+    color: white;
+    font-size: 14px;
+}
+
+.nao{
+    color: white;
+    font-family: "Kanit", sans-serif;
+    font-size: 14px;
+    margin-left: 75px;
+    margin-top: -28px;
+}
+
+
+input {
+    border: none;
+    border-bottom: 2px solid white; /* Apenas a linha inferior */
+    background: transparent; /* Fundo transparente */
+    color: white;
+    width: 310px;
+    padding: 5px 0;
+    margin-bottom: 10px;
+    font-size: 16px;
+    outline: none;
+    margin-left: 15px;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.7); /* Cor do placeholder mais suave */
+}
+
+button {
+    margin-bottom: 10px;
+    border: none;
+}
+
+.form-field {
+    margin-bottom: 20px;
+}
+
+.sej {
+    color: white;
+    margin-left: 100px;
+    font-family: "Kanit", sans-serif;
+    font-size: 26px;
+}

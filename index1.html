@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+    <title>Controle de gastos</title>
+</head>
+<body class="cadras">
+
+    <!-- Referência ao arquivo SVG -->
+    <img class="svg" src="elementos.svg" alt="Descrição do SVG">
+
+    <form>
+        <br><h2><strong class="sej">Login</strong></h2><br><br>
+        <div class="form-field">
+            <div><label></label></div>
+            <input type="email" class="email" name="email" id="email" placeholder="E-mail" onchange="onChangeEmail()"/>
+        </div><br>
+        <div class="form-field">
+            <div><label></label></div>
+            <input type="password" name="password" id="password" placeholder="Senha" onchange="onChangePassword()"/>
+        </div>
+        <div>
+            <button type="button" class="clear" id="recover-password-button" onclick="recoverPassword()" disabled="true">Esqueci minha senha <strong>Recuperar</strong></button>
+        </div>
+        <div class="but">
+            <button type="button" class="outline" onclick="register()"><strong>Registre-se</strong></button>  <p class="nao">Não tem conta?</p>
+        </div>
+        <div>
+            <button type="button" class="solid" id="login-button" disabled="true" onclick="login()"><strong>ENTRAR</strong></button>
+        </div><br><br>
+    </form>
+
+    <link rel="stylesheet" href="index1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lexend:wght@100..900&family=Rubik:ital,wght@0,390;1,390&display=swap" rel="stylesheet">
+
+    <script src="index.js"></script>
+    <script src="validations.js"></script>
+    <script src="loading.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyDYloZWRq32q9oC1f84_9ILU9xd8doUoyU",
+            authDomain: "impulse-163a6.firebaseapp.com",
+            projectId: "impulse-163a6",
+            storageBucket: "impulse-163a6.appspot.com",
+            messagingSenderId: "853610523332",
+            appId: "1:853610523332:web:1402ff249370b60153f791"
+        };
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <title>IMPULSE+</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts Link For Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escolher Tema</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lexend:wght@100..900&family=Rubik:ital,wght@0,390;1,390&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+   
+   
+   
+   
+   <style>
+        /* Estilos anteriores do cabeçalho e do nav não foram alterados */
+        
+        nav{
+  margin-top: -56px;
+  margin-left: 800px;
+  }
+
+  .logo{
+    width: 75px;
+    height: 56px;
+    margin-top: -13px;
+    margin-left: -780px;
+    opacity: 100%;
+  }
+  
+
+  .prt{
+    color: white;
+    font-size:22px;
+    margin-top: 35px;
+    text-align: center;
+    font-family: "Archivo Black", sans-serif; 
+ 
+  }
+
+  .titulo{
+    color: white;
+    margin-top: -42px;
+    margin-left: 480px;
+    font-family: "Archivo Black", sans-serif;
+    font-size: 21px ;
+  }
+  
+  .icn{
+    width: 79px;
+    height: 76px;
+    margin-left: 1300px;
+    margin-top: 6px;
+  }
+
+  .top-line {
+    border-top: 1px solid #FFFFFF; /* Cor da linha */
+    width: 1519px;
+    margin-left: -8px;
+    margin-top: 60px;
+    opacity: 50%;
+    
+  }
+
+  body{
+    height: 210vh;
+    background: linear-gradient(780deg,rgb(53, 15, 15), rgb(53, 15, 15), rgb(23, 5, 23), rgb(1, 1, 14),
+                                       rgb(12, 12, 65), rgb(12, 12, 65));
+    width: 100%;
+    overflow: 80%;
+    opacity: 100%;
+    
+  }
+
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            padding: 20px;
+            margin: 0 auto;
+            max-width: 1200px;
+            gap:60px;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s ease;
+            padding-bottom: 15px; /* Para dar um espaçamento maior ao botão */
+        }
+        
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-bottom: 4px solid #6200ea; /* Bordas para separar a imagem do texto */
+        }
+
+        .tema {
+            font-size: 18px;
+            margin: 15px;
+            color: #333;
+        }
+
+        .dropdown {
+            padding: 10px 0;
+        }
+
+        .cadras {
+            background-color: #6200ea;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 10px;
+        }
+
+        .cadras:hover {
+            background-color: #3700b3;
+        }
+
+        .cadras strong {
+            font-size: 16px;
+        }
+
+    </style>
+</head>
+<body>
+    <button class="chatbot-toggler">
+        <span class="material-symbols-rounded">mode_comment</span>
+        <span class="material-symbols-outlined">close</span>
+      </button>
+      <div class="chatbot">
+        <header>
+          <h2>DULCE</h2>
+          <span class="close-btn material-symbols-outlined">close</span>
+        </header>
+        <ul class="chatbox">
+          <li class="chat incoming">
+            <span class="material-symbols-outlined">smart_toy</span>
+            <p>Olá! Chamo-me Dulce <br>Como eu posso te ajudar hoje?</p>
+          </li>
+        </ul>
+        <div class="chat-input">
+          <textarea placeholder="Enter a message..." spellcheck="Mensagem não enviada" required></textarea>
+          <span id="send-btn" class="material-symbols-rounded">send</span>
+        </div>
+      </div>
+
+    <header class="head">
+        <div class="top-line"></div>
+        <p class="titulo">Trilha de aprendizado Impulse+ - Últimas Notícias</p>
+        <nav>
+            <a href="redacao.html"><img src="x.png" class="logo" alt="Logo"></a>
+            <a href="cadastro.html"><img class="icn" src="Icone perfil.png" alt="Perfil"></a>
+        </nav>
+    </header>
+
+    <p class="prt">O QUE ESTÁ ACONTECENDO NO MUNDO AGORA?</p>
+
+    <div class="container">
+      <!-- Card 1 -->
+      <div class="card">
+          <img class="tema1" src="misseis.png" alt="Tema 1">
+          <p class="tema"><strong>Irã lança mísseis contra Israel, que promete vingança.</strong></p>
+          <div class="dropdown">
+              <a href="https://g1.globo.com/mundo/noticia/2024/10/01/iran-lnaca-misseis-contra-israel.ghtml">
+                <button class="cadras" onclick=""><strong>Averiguar</strong></button></a>
+          </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card">
+          <img class="tema2" src="cárcere.jpg" alt="Tema 2">
+          <p class="tema"><strong>Mulher ficou 3 dias em cárcere privado antes de ligar para PM, pedir 'pizza' e ser resgatada</strong></p>
+          <div class="dropdown">
+            <a href="https://g1.globo.com/df/distrito-federal/noticia/2024/10/01/mulher-ficou-3-dias-em-carcere-privado-antes-de-ligar-para-pm-pedir-pizza-e-ser-resgatada.ghtml">
+                <button class="cadras" onclick=""><strong>Averiguar</strong></button></a>          </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card">
+          <img class="tema3" src="eco.jpg" alt="Tema 3">
+          <p class="tema"><strong>Economia do Ceará cresce 7,2% no segundo trimestre</strong></p>
+          <div class="dropdown">
+            <a href="https://globoplay.globo.com/v/12958600/">
+                <button class="cadras" onclick=""><strong>Averiguar</strong></button></a>          </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="card">
+          <img class="tema4" src="falta-de-agua.jpeg" alt="Tema 4">
+          <p class="tema"><strong>Saneago emite alerta para economia de água em todo o estado</strong></p>
+          <div class="dropdown">
+            <a href="https://globoplay.globo.com/v/12952923/">
+                <button class="cadras" onclick=""><strong>Averiguar</strong></button></a>          </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="card">
+          <img class="tema5" src="machado-de-assis.jpg" alt="Tema 5">
+          <p class="tema"><strong>Redação do Enem ou 'cover' de Machado de Assis: por que tantos alunos nota mil usam termos do século XIX, como 'outrossim'?</strong></p>
+          <div class="dropdown">
+            <a href="https://g1.globo.com/educacao/enem/2024/noticia/2024/10/01/redacao-do-enem-ou-cover-de-machado-de-assis-por-que-tantos-alunos-nota-mil-usam-termos-do-seculo-xix-como-outrossim.ghtml">
+                <button class="cadras" onclick=""><strong>Averiguar</strong></button></a>          </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="card">
+          <img class="tema6" src="cancer.jpg" alt="Tema 6">
+          <p class="tema"><strong>Mulheres negras são quase o dobro de vítimas de câncer agressivo, diz estudo do Inca</strong></p>
+          <div class="dropdown">
+            <a href="https://g1.globo.com/rj/rio-de-janeiro/noticia/2024/10/01/mulheres-negras-cancer-estudo-do-inca.ghtml">
+                <button class="cadras" onclick=""><strong>Averiguar</strong></button></a>          </div>
+      </div>
+
+      <!-- Card 7 -->
+      <div class="card">
+          <img class="tema7" src="queimadas.jpg" alt="Tema 7">
+          <p class="tema"><strong>Incêndios causam prejuízos de mais de R$ 14 bilhões no campo</strong></p>
+          <div class="dropdown">
+            <a href="https://g1.globo.com/economia/agronegocios/noticia/2024/09/26/incendios-causam-prejuizos-de-mais-de-r-14-bilhoes-no-campo.ghtml">
+                <button class="cadras" onclick=""><strong>Averiguar</strong></button></a>          </div>
+      </div>
+
+      <!-- Card 8 -->
+      <div class="card">
+          <img class="tema8" src="enforcamento.jpg" alt="Tema 8">
+          <p class="tema"><strong>Por que o 'paradoxo do enforcamento inesperado' é tão surpreendente</strong></p>
+          <div class="dropdown">
+            <a href="https://g1.globo.com/educacao/noticia/2024/09/24/por-que-o-paradoxo-do-enforcamento-inesperado-e-tao-surpreendente.ghtml">
+                <button class="cadras" onclick=""><strong>Averiguar</strong></button></a>          </div>
+      </div>
+
+      <div class="card">
+        <img class="tema9" src="crian.jpg" alt="Tema 8">
+        <p class="tema"><strong>'Se garante na beleza?': crianças participam de desafio que explora suas imagens e pode alimentar pornografia infantil</strong></p>
+        <div class="dropdown">
+            <a href="https://g1.globo.com/educacao/noticia/2024/09/12/se-garante-na-beleza-criancas-participam-de-desafio-que-explora-suas-imagens-viola-privacidade-e-pode-alimentar-pornografia-infantil.ghtml">
+                <button class="cadras" onclick=""><strong>Averiguar</strong></button></a>          </div>
+    </div>
+  </div>
+
+  <script>
+      function praticarOnline(tema) {
+          localStorage.setItem('temaSelecionado', tema); // Armazena o tema selecionado
+          window.location.href = 'pratiqueon.html'; // Direciona para a página de prática online
+      }
+  </script>
+
+</body>
+</html>

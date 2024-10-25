@@ -1,0 +1,309 @@
+body{
+    height: 110vh;
+    background: linear-gradient(780deg,rgb(53, 15, 15), rgb(53, 15, 15), rgb(23, 5, 23), rgb(1, 1, 14),
+                                       rgb(12, 12, 65), rgb(12, 12, 65));
+    width: 100%;
+    overflow: 80%;
+    opacity: 100%;
+    
+  }
+  
+  .top-line {
+    border-top: 1px solid #FFFFFF; /* Cor da linha */
+    width: 100%;
+    margin-left: 5px;
+    margin-top: 70px;
+    opacity: 50%;
+    
+  }
+  
+  .prt{
+    color: white;
+    font-size:45px;
+    margin-top: 35px;
+    margin-left: 70px;
+    font-family: "Archivo Black", sans-serif; 
+    text-align: left;
+  }
+  /* ---------------------------------------------------------------- */
+  .quadrado{
+        width: 270px;   /* Largura do quadrado */
+        height: 260px;  /* Altura do quadrado (igual à largura) */
+        background-color: black; /* Cor de fundo */
+        margin-left: -20px;
+        border-radius: 5px;
+        margin-top: -5px;
+        position: relative;
+    }
+    /* ---------------------------------------------------------------- */
+  
+    .quadrado1{
+        width: 270px;   /* Largura do quadrado */
+        height: 260px;  /* Altura do quadrado (igual à largura) */
+        background-color: black; /* Cor de fundo */
+        margin-left: 320px;
+        border-radius: 5px; 
+        margin-top: -260px;
+        position: absolute;
+    }
+  /* ---------------------------------------------------------------- */
+    .quadrado2{
+        width: 270px;   /* Largura do quadrado */
+        height: 260px;  /* Altura do quadrado (igual à largura) */
+        background-color: black; /* Cor de fundo */
+        margin-left: 670px;
+        border-radius: 5px; 
+        margin-top: -260px;
+        position: absolute;
+    }
+    /* ---------------------------------------------------------------- */
+  
+    .quadrado3{
+        width: 270px;   /* Largura do quadrado */
+        height: 260px;  /* Altura do quadrado (igual à largura) */
+        background-color: black; /* Cor de fundo */
+        margin-left: 1020px;
+        border-radius: 5px; 
+        margin-top: -260px;
+        position:absolute;
+    }
+  
+    .quadrados{
+      margin-left: 120px;
+      margin-top: 90px;
+    }
+  
+    .materia{
+      margin-left: 120px;
+    }
+  
+  
+    /* -------------------------------------------------------------- */
+  
+    .nom{
+        color: white;
+        font-family: "Kanit", sans-serif;
+        font-size: 13px;
+        margin-left: 78px;
+        margin-top: -135px;
+        position: absolute;
+    }
+  
+    .nom1{
+        color: white;
+        font-family: "Kanit", sans-serif;
+        font-size: 13px;
+        margin-left: 415px;
+        margin-top: -135px;
+        position: absolute; 
+    }
+  
+    .nom2{
+        color: white;
+        font-family: "Kanit", sans-serif;
+        font-size: 13px;
+        margin-left: 773px;
+        margin-top: -135px;
+        position: absolute; 
+    }
+  
+    .nom3{
+        color: white;
+        font-family: "Kanit", sans-serif;
+        font-size: 13px;
+        margin-left: 1120px;
+        margin-top: -135px;
+        position: absolute;  
+    }
+
+    /* -------------------------------------------------------- */
+
+
+  
+  /* .head{
+    color: white;
+    border: 1px solid rgb(184, 178, 178);
+    opacity: 72%;
+    width: 100%;
+    margin-left: -10px;
+    margin-top: -9px;
+    height: 75px;
+  }
+  
+  /* -------------------------------------------------------------------------- */
+  
+  .kanit-black {
+    font-family: "Kanit", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  
+  
+  
+  nav{
+    margin-top: -40px;
+    margin-left: 900px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-family: "Kanit", sans-serif;
+      font-size: 14.5px;
+      margin-left: 35px;
+      position: relative;
+      display: inline-block;
+      padding: 8px 0;
+    }
+    
+    /* Criar as linhas superior e inferior */
+    nav a::before, nav a::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: white;
+      left: 0;
+      transition: transform 0.3s ease;
+    }
+    
+    /* Linha superior */
+    nav a::before {
+      top: 0;
+      transform: scaleX(0); /* Inicialmente escondida */
+    }
+    
+    /* Linha inferior */
+    nav a::after {
+      bottom: 0;
+      transform: scaleX(0); /* Inicialmente escondida */
+    }
+    
+    /* Animação ao passar o mouse */
+    nav a:hover::before, nav a:hover::after {
+      transform: scaleX(1); /* Linhas aparecem */
+    }
+    
+  
+    .icn{
+      width: 75px;
+      height: 76px;
+      margin-left:1430px;
+      margin-top: -58px;
+    }
+    
+    .a{
+      text-decoration: none;
+      color: white;
+      font-family: "Kanit", sans-serif;
+      font-size: 14.5px;
+      margin-left: 140px;
+    }
+    
+    .a1{
+      margin-left: 35px;
+      text-decoration: none;
+      color: white;
+      font-family: "Kanit", sans-serif;
+      font-size: 14.5px;
+    }
+    
+    .a2{
+      margin-left: 35px;
+      text-decoration: none;
+      color: white;
+      font-family: "Kanit", sans-serif;
+      font-size: 14.5px;
+    }
+    
+    .a3{
+      margin-left: 35px;
+      text-decoration: none;
+      color: white;
+      font-family: "Kanit", sans-serif;
+      font-size: 14.5px;
+    }
+
+    .titu{
+      text-decoration: none;
+    }
+  
+  /* -------------------------------------------------------------------------- */
+  .nome{
+    color: white;
+    margin-top: -48px;
+    margin-left: 105px;
+  }
+  
+  .archivo-black-regular {
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  
+  /* ------------------------------------------------------------------------- */
+  
+  .logo{
+    width: 62px;
+    height: 51px;
+    margin-top: -60px;
+    margin-left: 60px;
+    opacity: 100%;
+  }
+  
+  .titulo{
+    color: white;
+    margin-top: -43px;
+    margin-left: 125px;
+    font-family: "Archivo Black", sans-serif;
+    font-size: 18px ;
+  }
+  
+  .top-line {
+    border-top: 1px solid #FFFFFF; /* Cor da linha */
+    width: 100%;
+    margin-left: -1px;
+    margin-top: 70px;
+    opacity: 50%;
+    
+  }
+  
+  /* -------------------------------------------------------------------------- */ 
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  /* Style the header */
+  .header {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Style the top navigation bar */
+  
+  
+  
+  
+  /* Style the topnav links */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }

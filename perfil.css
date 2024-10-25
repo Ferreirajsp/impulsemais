@@ -1,0 +1,474 @@
+
+    /* .head{
+      color: white;
+      border: 1px solid rgb(184, 178, 178);
+      opacity: 72%;
+      width: 100%;
+      margin-left: -10px;
+      margin-top: -9px;
+      height: 75px;
+    }
+    
+    /* -------------------------------------------------------------------------- */
+
+    body{
+        height: 110vh;
+        background: linear-gradient(780deg,rgb(53, 15, 15), rgb(53, 15, 15), rgb(23, 5, 23), rgb(1, 1, 14),
+                                           rgb(12, 12, 65), rgb(12, 12, 65));
+        width: 100%;
+        overflow: 80%;
+        opacity: 100%;
+        
+      }
+      
+      .prt{
+        color: white;
+        font-size: 30px;
+        text-align: center;
+        margin-top: 80px;
+        font-family: "Archivo Black", sans-serif; 
+      }
+      
+      /* .head{
+        color: white;
+        border: 1px solid rgb(184, 178, 178);
+        opacity: 72%;
+        width: 100%;
+        margin-left: -10px;
+        margin-top: -9px;
+        height: 75px;
+      }
+      
+      /* -------------------------------------------------------------------------- */
+      
+      .kanit-black {
+        font-family: "Kanit", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+      }
+      
+      
+      
+      nav{
+      margin-top: -56px;
+      margin-left: 800px;
+      }
+      
+      .icn{
+        width: 75px;
+        height: 76px;
+        margin-left: 1420px;
+        margin-top: -52px;
+      }
+      
+      .a{
+        text-decoration: none;
+        color: white;
+        font-family: "Kanit", sans-serif;
+        font-size: 14.5px;
+        margin-left: 120px;
+        margin-top: -10px;
+      }
+      
+      .a1{
+        margin-left: 35px;
+        text-decoration: none;
+        color: white;
+        font-family: "Kanit", sans-serif;
+        font-size: 14.5px;
+      }
+      
+      .a2{
+        margin-left: 35px;
+        text-decoration: none;
+        color: white;
+        font-family: "Kanit", sans-serif;
+        font-size: 14.5px;
+      }
+      
+      .a3{
+        margin-left: 35px;
+        text-decoration: none;
+        color: white;
+        font-family: "Kanit", sans-serif;
+        font-size: 14.5px;
+      }
+      
+      .a4{
+        text-decoration: none;
+        
+      }
+      
+      /* -------------------------------------------------------------------------- */
+      
+      .caixa{
+        color: white;
+        text-decoration: none;
+        background-color: rgb(12, 12, 65);
+        width: 72px;
+        font-size: 14.5px;
+        height: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 3px;
+        font-family: "Kanit", sans-serif;
+      }
+      
+      .caixa::before, .caixa::after{
+        content: '';
+        position: absolute;
+        z-index: -1;
+        width: calc(100% + -1442px);
+        height: calc(100% + -710px);
+        background: linear-gradient(45deg, #ffff00, #00ff00, #0099ff, #001aff, #a200ff, #ff0055, #ff0000, 
+        #ffff00, #00ff00, #0099ff, #001aff, #a200ff);
+        background-size: 300%;
+        border-radius: 3px;
+        animation: AnimarBorda 4s linear infinite;
+      
+      }
+      
+      .caixa::after{
+        filter: blur(10px);
+      }
+      
+      @keyframes AnimarBorda{
+        0%{
+          background-position: 0%;
+        }
+        100%{
+          background-position: 300%;
+        }
+      }
+      
+      .caixa{
+        margin-left: 505px;
+        margin-top: -24px;
+      }
+      
+      
+      
+      /* -------------------------------------------------------------------------- */
+      .nome{
+        color: white;
+        margin-top: -48px;
+        margin-left: 105px;
+      }
+      
+      .archivo-black-regular {
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      
+      /* Style the topnav links */
+      .topnav a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+      /* Change color on hover */
+      .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      
+      /* ----------------------------------------------------------------------------------- */
+
+      
+      /* ----------------------------------------------------------- */
+      
+      /* Estilo do menu dropdown */
+      .dropdown-content {
+        display: none; /* Escondido por padrão */
+        position: absolute;
+        background-color: #343434;
+        min-width: 150px;
+        z-index: 1;
+      }
+      
+      .dropdown-content a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        font-family: "Kanit", sans-serif;
+      }
+      
+      .dropdown-content a:hover {
+        background-color: #575757;
+      }
+      
+      /* Para exibir o dropdown ao clicar */
+      .show {
+        display: block;
+      }
+
+
+
+        /* -------------------------------------------------------------------------- */
+    
+    .logo{
+      width: 62px;
+      height: 51px;
+      margin-top: -230px;
+      margin-left: 45px;
+      opacity: 100%;
+    }
+    
+    .titulo{
+      color: white;
+      margin-top: -40px;
+      margin-left: 130px;
+      font-size: 18px;
+      font-family: "Archivo Black", sans-serif; 
+    }
+
+    nav{
+      margin-top: -47px;
+    }
+  
+  
+    .kanit-black {
+      font-family: "Kanit", sans-serif;
+      font-weight: 900;
+      font-style: normal;
+    }
+    
+    
+    /* -------------------------------------------------------------------------- */
+    
+    .titu{
+      color: white;
+      text-align: center;
+      font-size:xx-large;
+      margin-top: 40px;
+    }
+    
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      margin: 0;
+    }
+    
+    /* Style the header */
+    .header {
+      background-color: #f1f1f1;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    /* Style the top navigation bar */
+    .top-line {
+      border-top: 1px solid #FFFFFF; /* Cor da linha */
+      width: 100%;
+      margin-left: -8px;
+      margin-top: 70px;
+      opacity: 50%;
+      
+  }
+    
+    /* Style the topnav links */
+    .topnav a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    /* Change color on hover */
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+  
+    /* ---------------------CADASTRO------------------------------------ */
+  
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'poppins',sans-serif;
+  }
+
+  a{
+    text-decoration: none;
+    color: white;
+  }
+  
+  section{
+      position: relative;
+      max-width: 420px;
+      background-color: transparent;
+      border-radius: 28px;
+      backdrop-filter: blur(55px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem 3rem;
+      height: 630px;
+      margin-left: 840px;
+      margin-top: 70px;
+      background: linear-gradient(180deg, #0d1a33, #640354 );}
+  
+      .nao1{
+        color: white;
+        font-size: 14px;
+        text-decoration: none;
+        }
+        
+        
+        .regis1{
+          color: white;
+          text-decoration: none;
+          font-size: 14px;
+          font-weight: bold;
+        } 
+        
+  /* --------------------------------------------------- */
+  
+  
+  .sej{
+      font-size: 22px;
+      margin-top: 2px;
+  }
+  
+  /*-------------------------------------------------------------------------------- */
+  
+
+
+
+.profile-container {
+    height: 490px;
+    max-width: 380px;
+    margin-left: 570px;
+    margin-top: -30px;
+    background: linear-gradient(180deg, #0d1a33, #640354 );
+    border-radius: 35px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+    text-align: center;
+    padding: 20px;
+}
+
+.edit-button {
+    position: absolute;
+    padding: 10px;
+    color: rgb(170, 43, 43);
+    border: none;
+    width: 90px;
+    margin-left: 160px;
+    margin-top: -19px;
+}
+
+.profile-photo {
+    width: 135px;
+    height: 110px;
+    margin-left: 0;
+    margin-top: 10px;
+    border-radius: 50%;
+}
+
+h1 {
+    margin-top: 0;
+    color: #333;
+}
+
+.social-links {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.social-link {
+    display: block;
+    background: rgb(247, 247, 247);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 18px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.social-link1 {
+    display: block;
+    background: rgb(247, 247, 247);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 18px;
+    color: #000000;
+    text-decoration: none;
+    margin-top: -10px;
+}
+
+.social-link2 {
+    display: block;
+    background: rgb(247, 247, 247);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 18px;
+    color: #000000;
+    text-decoration: none;
+    margin-top: 20px;
+}
+.social-link i {
+    margin-right: 8px; /* Espaço entre o ícone e o texto */
+}
+
+.usua{
+    color: white;
+    font-size: 15px;
+}
+
+.txt{
+    color: white;
+    font-family: "Archivo Black", sans-serif;
+    margin-top: 40px;
+    margin-left: 70px;
+    font-size: 53px;
+
+}
+
+
+ /*-------------------------------------------------------------------------------- */
+ .outline {
+  margin-left: 2px;
+  margin-top: 60px;
+  background: transparent;
+  color: white;
+  font-size: 14px;
+}
+
+
+ .edit-form {
+  width: 360px;  /* Ajuste a largura */
+  height: 297px; /* Ajuste a altura */
+  margin-left: 1020px; /* Centraliza a div */
+  margin-top: -480px;
+  margin-right: auto; /* Centraliza a div */
+  background: rgba(255, 255, 255, 0.8); /* Cor de fundo clara com opacidade */
+  border-radius: 15px; /* Bordas arredondadas */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra */
+  position: relative;
+  text-align: left;
+  padding: 20px;
+  color: black; /* Cor do texto */
+}
+
+
+.opa{
+    font-family: "Archivo Black", sans-serif;
+    text-align: center;
+}
+

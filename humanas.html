@@ -1,0 +1,111 @@
+<link rel="stylesheet" href="humanas.css">
+<link rel="stylesheet" href="style.css">
+
+<header class="head">
+
+    <meta charset="utf-8">
+    <title>IMPULSE+</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts Link For Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+
+    <div class="top-line"></div>
+    <img src="log.png" class="logo" alt="">
+    <a class="titu" href="index.html"><p class="titulo">IMPULSE+</p></a>
+    
+   
+    <nav>
+        <a class="a" href="humanas.html" onclick="toggleDropdown(event)">Humanas</a>
+        <div id="dropdown-humanas" class="dropdown-content">
+          <a href="linguagens.html">Linguagens</a>
+        </div>
+      <a class="a1" href="exatas.html">Natureza</a>
+      <a class="a2" href="redacao.html">Redação</a>
+      <a class="a3" href="cartoes.html">Cartões</a>
+    </nav>
+    <a href="cadastro.html"><img class="icn" src="Icone perfil.png" alt=""></a>
+
+
+    <!-- <nav>
+      <a href="perfil.html">
+      <img class="icn" src="Icone perfil.png" alt=""></a>
+    </nav> -->
+
+    <!-- ----------------------------------------------------------------------- -->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lexend:wght@100..900&family=Rubik:ital,wght@0,390;1,390&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lexend:wght@100..900&family=Rubik:ital,wght@0,390;1,390&display=swap" rel="stylesheet">
+   
+</header>
+
+<body>
+
+    <button class="chatbot-toggler">
+        <span class="material-symbols-rounded">mode_comment</span>
+        <span class="material-symbols-outlined">close</span>
+      </button>
+      <div class="chatbot">
+        <header>
+          <h2>DULCE</h2>
+          <span class="close-btn material-symbols-outlined">close</span>
+        </header>
+        <ul class="chatbox">
+          <li class="chat incoming">
+            <span class="material-symbols-outlined">smart_toy</span>
+            <p>Olá! Chamo-me Dulce <br>Como eu posso te ajudar hoje?</p>
+          </li>
+        </ul>
+        <div class="chat-input">
+          <textarea placeholder="Enter a message..." spellcheck="Mensagem não enviada" required></textarea>
+          <span id="send-btn" class="material-symbols-rounded">send</span>
+        </div>
+      </div>
+    <p class="prt">Humanas e suas <br> tecnologias</p>
+    <!-- ------------------------------------------------------------------- -->
+    <div class="quadrados"><a href="histo.html"><div class="quadrado"></div></a>
+    <a href="geo.html"><div class="quadrado1"></div></a>
+    <a href="filo.html"><div class="quadrado2"></div></a> 
+    <a href="socio.html"><div class="quadrado3"></div></a></div>
+
+    <div class="materia"><p class="nom">HISTÓRIA</p>
+    <p class="nom1">GEOGRAFIA</p>
+    <p class="nom2">FILOSOFIA</p>
+    <p class="nom3">SOCIOLOGIA</p></div>
+
+    <!-- ------------------------------------------------------------------- -->
+
+    <script>
+        function toggleDropdown(event) {
+                   event.preventDefault(); // Evita que o link seja seguido imediatamente
+                   var dropdown = document.getElementById("dropdown-humanas");
+                   dropdown.classList.toggle("show");
+               }
+       
+               // Fecha o dropdown se o usuário clicar fora dele
+               window.onclick = function(event) {
+                   if (!event.target.matches('.a')) {
+                       var dropdowns = document.getElementsByClassName("dropdown-content");
+                       for (var i = 0; i < dropdowns.length; i++) {
+                           var openDropdown = dropdowns[i];
+                           if (openDropdown.classList.contains('show')) {
+                               openDropdown.classList.remove('show');
+                           }
+                       }
+                   }
+               }
+       
+           </script>
+
+</body>
