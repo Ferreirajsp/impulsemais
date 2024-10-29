@@ -1,12 +1,21 @@
 body{
     height: 100vh;
-    background: linear-gradient(780deg,rgb(53, 15, 15), rgb(53, 15, 15), rgb(23, 5, 23), rgb(1, 1, 14),
-                                       rgb(12, 12, 65), rgb(12, 12, 65));
+    background: linear-gradient(135deg, #0d1a33, #640354);
     width: 100%;
-    overflow: 80%;
+    overflow: hidden;
     opacity: 100%;
     
   }
+
+  .svg {
+    position: absolute; /* Permite que o SVG seja posicionado em relação ao body */
+    margin-left: -568px;
+    margin-top: -115px;
+    rotate: 0deg;
+    width: 1420px; /* Ajusta a largura do SVG para preencher o corpo */
+    height: 860px; /* Ajusta a altura do SVG para preencher o corpo */
+    z-index: 0; /* Coloca o SVG atrás do formulário */
+}
   
   .top-line {
     border-top: 1px solid #FFFFFF; /* Cor da linha */
@@ -14,6 +23,8 @@ body{
     margin-left: 5px;
     margin-top: 70px;
     opacity: 50%;
+    position: relative;
+    z-index: 1;
     
   }
   
@@ -126,6 +137,8 @@ body{
   nav{
   margin-top: -40px;
   margin-left: 800px;
+  position: relative;
+  z-index: 1;
   }
   
   .icn{
@@ -158,6 +171,8 @@ body{
     margin-top: -65px;
     margin-left: 20px;
     opacity: 100%;
+    position: relative;
+    z-index: 1;
   }
   
   .titulo{
@@ -171,7 +186,7 @@ body{
   .top-line {
     border-top: 1px solid #FFFFFF; /* Cor da linha */
     width: 100%;
-    margin-left: -8px;
+    margin-left: -1px;
     margin-top: 70px;
     opacity: 50%;
     

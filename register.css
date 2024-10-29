@@ -1,23 +1,36 @@
 body {
-    height: 80vh;
-    background: linear-gradient(780deg, rgb(53, 15, 15), rgb(53, 15, 15), rgb(23, 5, 23), rgb(1, 1, 14), rgb(12, 12, 65), rgb(12, 12, 65));
-    width: 100%;
-    overflow: 80%;
+    height: 110vh;
+    background: linear-gradient(135deg, #0d1a33, #640354);
+    overflow: hidden; /* Para evitar rolagem desnecessária */
     opacity: 100%;
+    position: relative; /* Para posicionar o SVG corretamente */
 }
 
 
 .cadras {
-    margin-left: 560px;
-    margin-top: 150px;
+    margin-left: 900px;
+    margin-top: 230px;
+}
+
+.svg {
+    position: absolute; /* Permite que o SVG seja posicionado em relação ao body */
+    margin-left: -1040px;
+    margin-top: -240px;
+    width: 1350px; /* Ajusta a largura do SVG para preencher o corpo */
+    height: 890px; /* Ajusta a altura do SVG para preencher o corpo */
+    z-index: 0; /* Coloca o SVG atrás do formulário */
 }
 
 form {
-    width: 340px;
+    width: 370px;
     border-radius: 26px;
     padding: 15px;
     height: 490px;
     background: linear-gradient(180deg, #0d1a33, #640354);
+    position: relative; /* Permite que o form tenha um z-index */
+    z-index: 1; /* Coloca o formulário acima do SVG */
+    margin: auto; /* Centraliza o formulário */
+    margin-top: -140px; /* Margem superior para afastar do topo */
 }
 
 .loading {
@@ -47,7 +60,7 @@ button[disabled] {
 
 .solid {
     margin-top: 60px;
-    margin-left: 5px;
+    margin-left: 23px;
     background: white;
     border-radius: 25px;
     border: none;
@@ -105,7 +118,7 @@ button {
 
 .sej {
     color: white;
-    margin-left: 100px;
+    margin-left: 110px;
     font-family: "Kanit", sans-serif;
     font-size: 26px;
 }

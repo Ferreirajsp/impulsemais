@@ -1,11 +1,22 @@
-body{
-    height: 135vh;
-    background: linear-gradient(780deg,rgb(53, 15, 15), rgb(53, 15, 15), rgb(23, 5, 23), rgb(1, 1, 14),
-                                       rgb(12, 12, 65), rgb(12, 12, 65));
+
+
+  body{
+    height: 170vh;
+    background: linear-gradient(135deg, #0d1a33, #640354);
     width: 100%;
     overflow: 80%;
     opacity: 100%;
     
+  }
+
+  .svg {
+    position: absolute; /* Permite que o SVG seja posicionado em relação ao body */
+    margin-left: 360px;
+    margin-top: 24px;
+    rotate: 90deg;
+    width: 1590px; /* Ajusta a largura do SVG para preencher o corpo */
+    height: 870px; /* Ajusta a altura do SVG para preencher o corpo */
+    z-index: 0; /* Coloca o SVG atrás do formulário */
   }
   
   .top-line {
@@ -23,6 +34,8 @@ body{
     margin-top: 35px;
     text-align: center;
     font-family: "Archivo Black", sans-serif; 
+    position: relative;
+    z-index: 1;
  
   }
 /* ---------------------------------------------------------------- */
@@ -38,6 +51,9 @@ body{
     height: 380px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14.5px;
+    position: relative;
+    z-index: 1;
+ 
    
 }
 
@@ -52,6 +68,9 @@ body{
     height: 380px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14.5px;
+    position: relative;
+    z-index: 1;
+ 
    
 }
 
@@ -66,6 +85,9 @@ body{
     height: 380px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14.5px;
+    position: relative;
+    z-index: 1;
+ 
    
 }
 
@@ -80,6 +102,9 @@ body{
     height: 380px;
     font-size: 14.5px;
     font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    z-index: 1;
+ 
 }
 
 .card5{
@@ -93,6 +118,9 @@ body{
   height: 380px;
   font-size: 14.5px;
   font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  z-index: 1;
+
 }
 
 .card6{
@@ -106,6 +134,9 @@ body{
   height: 380px;
   font-size: 14.5px;
   font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  z-index: 1;
+
 }
 
 .card7{
@@ -119,6 +150,9 @@ body{
   height: 380px;
   font-size: 14.5px;
   font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  z-index: 1;
+
 }
 
 .card8{
@@ -132,6 +166,9 @@ body{
   height: 380px;
   font-size: 14.5px;
   font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  z-index: 1;
+
 }
 
    
@@ -141,54 +178,81 @@ body{
 .tema{
     text-align:left;
     padding: 0px 2;
+    position: relative;
+    z-index: 1;
+ 
 }
 
 .tema1{
     width: 100%;
     height: 150px;
     opacity: 50%;
+    position: relative;
+    z-index: 1;
+ 
 }
 
 .tema2{
     width: 100%;
     height: 150px;
     opacity: 50%;
+    position: relative;
+    z-index: 1;
+ 
 }
 
 .tema3{
     width: 100%;
     height: 150px;
     opacity: 50%;
+    position: relative;
+    z-index: 1;
+ 
 }
 
 .tema4{
     width: 100%;
     height: 150px;
     opacity: 50%;
+    position: relative;
+    z-index: 1;
+ 
 }
 
 .tema5{
   width: 100%;
   height: 150px;
   opacity: 50%;
+  position: relative;
+  z-index: 1;
+
 }
 
 .tema6{
   width: 100%;
   height: 150px;
   opacity: 50%;
+  position: relative;
+  z-index: 1;
+
 }
 
 .tema7{
   width: 100%;
   height: 150px;
   opacity: 50%;
+  position: relative;
+  z-index: 1;
+
 }
 
 .tema8{
   width: 100%;
   height: 150px;
   opacity: 50%;
+  position: relative;
+  z-index: 1;
+
 }
 /*---------------------------------------------------------------- */
 
@@ -203,6 +267,9 @@ body{
         margin-left: 122px;
         margin-top: -135px;
         position: absolute;
+        position: relative;
+        z-index: 1;
+     
     }
 
     /* -------------------------------------------------------- */
@@ -220,6 +287,9 @@ body{
         text-decoration: none;
         transition: background-color 0.3s ease, color 0.3s ease;
         margin-top: 50px;
+        position: relative;
+        z-index: 1;
+     
         
       }
       
@@ -247,6 +317,9 @@ body{
   nav{
   margin-top: -40px;
   margin-left: 800px;
+  position: relative;
+  z-index: 1;
+
   }
   
   .icnn{
@@ -254,6 +327,9 @@ body{
     height: 76px;
     margin-left: 1300px;
     margin-top: -12px;
+    position: relative;
+    z-index: 1;
+ 
   }
  
   
@@ -262,12 +338,18 @@ body{
     color: white;
     margin-top: -48px;
     margin-left: 105px;
+    position: relative;
+    z-index: 1;
+ 
   }
   
   .archivo-black-regular {
     font-family: "Archivo Black", sans-serif;
     font-weight: 400;
     font-style: normal;
+    position: relative;
+    z-index: 1;
+ 
   }
   
   
@@ -279,6 +361,9 @@ body{
     margin-top: -23px;
     margin-left: -780px;
     opacity: 100%;
+    position: relative;
+    z-index: 1;
+ 
   }
   
   .titulo{
@@ -287,14 +372,20 @@ body{
     margin-left: 550px;
     font-family: "Archivo Black", sans-serif;
     font-size: 21px ;
+    position: relative;
+    z-index: 1;
+ 
   }
   
   .top-line {
     border-top: 1px solid #FFFFFF; /* Cor da linha */
     width: 1527px;
-    margin-left: -8px;
+    margin-left: -1px;
     margin-top: 60px;
     opacity: 50%;
+    position: relative;
+    z-index: 1;
+ 
     
   }
   
@@ -313,6 +404,9 @@ body{
     background-color: #f1f1f1;
     padding: 20px;
     text-align: center;
+    position: relative;
+    z-index: 1;
+ 
   }
   
   /* Style the top navigation bar */
@@ -348,6 +442,9 @@ body{
     flex-wrap: wrap;
     justify-content: space-between; /* Para espaçar os cards igualmente */
     margin: 20px; /* Espaçamento ao redor do container */
+    position: relative;
+    z-index: 1;
+ 
 }
 
 .card {
@@ -359,6 +456,9 @@ body{
     border: none; /* Sem bordas */
     border-radius: 8px;
     text-align: center; /* Centraliza o texto e botões */
+    position: relative;
+    z-index: 1;
+ 
 }
 
 /* Estilos para o dropdown */
@@ -367,6 +467,9 @@ body{
     display: inline-block;
     width: 100%; /* Faz o dropdown ocupar toda a largura do card */
     text-align: center; /* Centraliza o conteúdo do dropdown */
+    position: relative;
+    z-index: 1;
+ 
 }
 
 .dropdown-content {
@@ -378,6 +481,9 @@ body{
     padding: 10px;
     z-index: 1;
     min-width: 200px;
+    position: relative;
+    z-index: 1;
+ 
 }
 
 .dropdown-content button {
@@ -388,6 +494,9 @@ body{
     margin: 5px 0;
     cursor: pointer;
     width: 100%; /* Faz o botão ocupar toda a largura do dropdown */
+    position: relative;
+    z-index: 1;
+ 
 }
 
 .dropdown-content button:hover {
