@@ -1,7 +1,7 @@
 
 
   body{
-    height: 170vh;
+    height: 185vh;
     background: linear-gradient(135deg, #0d1a33, #640354);
     width: 100%;
     overflow: 80%;
@@ -23,7 +23,7 @@
     border-top: 1px solid #FFFFFF; /* Cor da linha */
     width: 100%;
     margin-left: 5px;
-    margin-top: 70px;
+    margin-top: 10px;
     opacity: 50%;
     
   }
@@ -186,7 +186,7 @@
 .tema1{
     width: 100%;
     height: 150px;
-    opacity: 50%;
+    opacity: 60%;
     position: relative;
     z-index: 1;
  
@@ -195,7 +195,7 @@
 .tema2{
     width: 100%;
     height: 150px;
-    opacity: 50%;
+    opacity: 60%;
     position: relative;
     z-index: 1;
  
@@ -204,7 +204,7 @@
 .tema3{
     width: 100%;
     height: 150px;
-    opacity: 50%;
+    opacity: 60%;
     position: relative;
     z-index: 1;
  
@@ -213,7 +213,7 @@
 .tema4{
     width: 100%;
     height: 150px;
-    opacity: 50%;
+    opacity: 60%;
     position: relative;
     z-index: 1;
  
@@ -222,7 +222,7 @@
 .tema5{
   width: 100%;
   height: 150px;
-  opacity: 50%;
+  opacity: 60%;
   position: relative;
   z-index: 1;
 
@@ -231,7 +231,7 @@
 .tema6{
   width: 100%;
   height: 150px;
-  opacity: 50%;
+  opacity: 60%;
   position: relative;
   z-index: 1;
 
@@ -240,7 +240,7 @@
 .tema7{
   width: 100%;
   height: 150px;
-  opacity: 50%;
+  opacity: 60%;
   position: relative;
   z-index: 1;
 
@@ -249,7 +249,7 @@
 .tema8{
   width: 100%;
   height: 150px;
-  opacity: 50%;
+  opacity: 60%;
   position: relative;
   z-index: 1;
 
@@ -315,7 +315,7 @@
   
   
   nav{
-  margin-top: -40px;
+  margin-top: 20px;
   margin-left: 800px;
   position: relative;
   z-index: 1;
@@ -326,10 +326,15 @@
     width: 79px;
     height: 76px;
     margin-left: 1300px;
-    margin-top: -12px;
+    margin-top: 10px;
     position: relative;
     z-index: 1;
  
+  }
+
+  .icn{
+    margin-left: 100px;
+    margin-top: -80px;
   }
  
   
@@ -358,8 +363,8 @@
   .logo{
     width: 75px;
     height: 56px;
-    margin-top: -23px;
-    margin-left: -780px;
+    margin-top: 15px;
+    margin-left: 20px;
     opacity: 100%;
     position: relative;
     z-index: 1;
@@ -381,7 +386,7 @@
     border-top: 1px solid #FFFFFF; /* Cor da linha */
     width: 1527px;
     margin-left: -1px;
-    margin-top: 60px;
+    margin-top: -20px;
     opacity: 50%;
     position: relative;
     z-index: 1;
@@ -450,7 +455,7 @@
 .card {
     margin: 10px; /* Margem entre os cards */
     padding: 20px;
-    background-color: #0f0f0f; /* Fundo escuro para os cards */
+    background-color: #0f0f0fac; /* Fundo escuro para os cards */
     width: calc(25% - 50px); /* Largura dos cards - 20px para ajustar as margens */
     box-sizing: border-box; /* Para incluir o padding na largura total */
     border: none; /* Sem bordas */

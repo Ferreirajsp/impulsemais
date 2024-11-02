@@ -1,6 +1,6 @@
 body {
     height: 130vh;
-    background: linear-gradient(780deg, rgb(53, 15, 15), rgb(53, 15, 15), rgb(23, 5, 23), rgb(1, 1, 14), rgb(12, 12, 65), rgb(12, 12, 65));
+    background: linear-gradient(135deg, #0d1a33, #640354);
     width: 100%;
     margin: 0;
     padding: 0;
@@ -81,7 +81,7 @@ body {
     width: 79px;
     height: 76px;
     margin-left: 630px;
-    margin-top: -15px;
+    margin-top: -28px;
   }
  
   
