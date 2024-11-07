@@ -1,107 +1,293 @@
 body {
-    height: 130vh;
-    background-color: #112358;
-    width: 100%;
-    margin: 0;
-    padding: 0;
+  height: 130vh;
+  background-color: #112358;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
+.logoo {
+  width: 75px;
+  height: 56px;
+  margin-top: 0px;
+  margin-left: 0px;
+  opacity: 100%;
+}
+
+.icn {
+  width: 79px;
+  height: 76px;
+  margin-left: 600px;
+  margin-top: -25px;
+}
+
+.log {
+  margin-left: 30px;
+  margin-top: -45px;
+}
+
+.titulo {
+  color: white;
+  margin-top: -50px;
+  margin-left: 530px;
+  font-family: "Archivo Black", sans-serif;
+  font-size: 21px;
+}
+
+.top-line {
+  border-top: 1px solid #FFFFFF; /* Cor da linha */
+  width: 100%;
+  margin-left: -1px;
+  margin-top: 70px;
+  opacity: 50%;
+}
+
+nav {
+  margin-top: -40px;
+  margin-left: 800px;
+}
 
 .prt {
-    color: white;
-    font-size: 22px;
-    margin-top: 30px;
-    text-align: center;
-    font-family: "Archivo Black", sans-serif;
+  color: white;
+  font-size: 22px;
+  margin-top: 30px;
+  text-align: center;
+  font-family: "Archivo Black", sans-serif;
 }
 
 /* Estilos para os cards */
 .card-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    justify-content: center;
-    margin: 50px auto;
-    width: 90%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  justify-content: center;
+  margin: 50px auto;
+  width: 90%;
 }
 
 .card {
-    width: 100%;
-    height: 200px;
-    background-color: black;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: "Archivo Black", sans-serif;
-    font-size: 16px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-    transition: transform 0.3s, box-shadow 0.3s;
+  position: relative; /* Adicionado para posicionar o menu corretamente */
+  width: 100%;
+  height: 200px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Archivo Black", sans-serif;
+  font-size: 16px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
-  
-.logoo{
-    width: 75px;
-    height: 56px;
-    margin-top: -58px;
-    margin-left: 20px;
-    opacity: 100%;
-  }
-  
-  .titulo{
-    color: white;
-    margin-top: -66px;
-    margin-left: 530px;
-    font-family: "Archivo Black", sans-serif;
-    font-size: 21px ;
-  }
-  
-  .top-line {
-    border-top: 1px solid #FFFFFF; /* Cor da linha */
-    width: 100%;
-    margin-left: -1px;
-    margin-top: 70px;
-    opacity: 50%;
-    
-  }
+.menu-icon {
+  cursor: pointer;
+  position: absolute; /* Para posicionar corretamente no card */
+  top: 10px;
+  right: 10px; /* Ajuste para o canto superior direito */
+  font-size: 20px;
+  color: white; /* Cor do ícone de menu */
+}
 
-  nav{
-  margin-top: -40px;
-  margin-left: 800px;
-  }
-  
-  .icn{
-    width: 79px;
-    height: 76px;
-    margin-left: 630px;
-    margin-top: -15px;
-  }
- 
-  
-  /* -------------------------------------------------------------------------- */
-  .nome{
-    color: white;
-    margin-top: -48px;
-    margin-left: 105px;
-  }
+.card-menu {
+  position: absolute;
+  top: 30px; /* Ajuste para ficar abaixo do ícone */
+  right: 10px; /* Ajuste para o lado direito */
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+.card-menu button {
+  display: block;
+  width: 100%;
+  border: none;
+  background: none;
+  color: black;
+  padding: 10px;
+  text-align: left;
+}
+
+.card-menu button:hover {
+  background-color: #f1f1f1; /* Cor ao passar o mouse */
+}
+
+/* Botão de Adicionar Conteúdo */
+.validate-button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #93abc2;
+  color: #00004e;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Formulário para adicionar conteúdo */
+#contentForm {
+  margin: 20px auto;
+  text-align: center;
+}
+
+#newContentName {
+  margin: 10px 0;
+  padding: 10px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#contentForm button {
+  padding: 10px 15px;
+  background-color: #5cb85c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 /* Responsividade */
 @media screen and (max-width: 768px) {
-    .card-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  .card-container {
+      grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media screen and (max-width: 480px) {
-    .card-container {
-        grid-template-columns: 1fr;
-    }
+  .card-container {
+      grid-template-columns: 1fr;
+  }
+};
+
+/* Estilos para os botões de confirmar */
+.confirm-btn {
+  padding: 10px 20px;
+  background-color: #4CAF50; /* Cor verde */
+  color: white; /* Texto branco */
+  border: none; /* Sem borda */
+  border-radius: 5px; /* Bordas arredondadas */
+  cursor: pointer; /* Cursor de mão */
+  transition: background-color 0.3s; /* Efeito de transição */
+}
+
+.confirm-btn:hover {
+  background-color: #45a049; /* Tom mais escuro no hover */
+}
+
+/* Formulário para adicionar conteúdo */
+#contentForm {
+  margin: 20px auto;
+  text-align: center;
+  border: 1px solid #ccc; /* Borda do formulário */
+  padding: 20px; /* Padding interno */
+  border-radius: 10px; /* Bordas arredondadas */
+  background-color: rgba(255, 255, 255, 0.1); /* Fundo levemente transparente */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra ao redor */
+  width: 390px;
+}
+
+/* Estilo do campo de texto do formulário */
+#newContentName {
+  margin: 10px 0;
+  padding: 10px;
+  width: 176px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px; /* Tamanho da fonte */
+}
+
+/* Estilos para os cards */
+.card {
+  position: relative; /* Para posicionar o menu corretamente */
+  width: 100%;
+  height: 200px;
+  background-color: #1f1f1f; /* Um tom escuro */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Archivo Black", sans-serif;
+  font-size: 16px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.menu-icon {
+  cursor: pointer;
+  margin-left: 10px;
+  font-size: 20px;
+  color: white; /* Cor do ícone de menu */
+}
+
+.card-menu {
+  position: absolute;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+.card-menu button {
+  display: block;
+  width: 100%;
+  border: none;
+  background: none;
+  color: black;
+  padding: 10px;
+  text-align: left;
+}
+
+.card-menu button:hover {
+  background-color: #f1f1f1; /* Cor ao passar o mouse */
+}
+
+/* Formulário de renomear conteúdo */
+#renameForm {
+  margin: 20px auto;
+  text-align: center;
+  border: 1px solid #ccc; /* Borda do formulário */
+  padding: 20px; /* Padding interno */
+  border-radius: 10px; /* Bordas arredondadas */
+  background-color: rgba(255, 255, 255, 0.1); /* Fundo levemente transparente */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra ao redor */
+}
+
+#renameContentName {
+  margin: 10px 0;
+  padding: 10px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px; /* Tamanho da fonte */
 }
 
 
+/* Responsividade */
+@media screen and (max-width: 768px) {
+  .card-container {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .card-container {
+      grid-template-columns: 1fr;
+  }
+}

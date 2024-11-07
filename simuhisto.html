@@ -9,7 +9,7 @@
 <body>
     <header class="head">
         <div class="top-line"></div>
-        <p class="titulo"><strong>Página de Questões - Impulse</strong></p>
+        <p class="titulo"><strong>Página de Simulados - Impulse</strong></p>
         <div class="log"><a href="histo.html"><img src="x.png" class="logoo" alt=""></a></div>
         <nav>
             <a href="cadastro.html"><img class="icn" src="Icone perfil.png" alt=""></a>
@@ -17,26 +17,26 @@
     </header>
 
     <section>
-        <p class="prt"><strong>Escolha o Assunto</strong></p>
+        <p class="prt"><strong>Escolha o Simulado</strong></p>
     </section>
 
     <section class="card-container" id="simuladoCardContainer">
         <div class="card" onclick="downloadSimulado('simulado_2022.pdf')">
-            <p>Primeira Guerra Mundial</p>
+            <p>Simulado 2022</p>
         </div>
         <div class="card" onclick="downloadSimulado('simulado_2023.pdf')">
-            <p>Guerra Fria</p>
+            <p>Simulado 2023</p>
         </div>
         <div class="card" onclick="downloadSimulado('simulado_2024.pdf')">
-            <p>Era Vargas</p>
+            <p>Simulado 2024</p>
         </div>
         <!-- Os outros simulados serão adicionados aqui -->
     </section>
 
-    <button id="addSimuladoBtn" class="validate-button">Adicionar Bloco de Questões</button>
+    <button id="addSimuladoBtn" class="validate-button">Adicionar Simulado</button>
 
     <div id="addSimuladoForm" class="contentForm" style="display: none;">
-        <input type="text" id="simuladoName" placeholder="Titulo" />
+        <input type="text" id="simuladoName" placeholder="Nome do Simulado" />
         <input type="file" id="simuladoFile" /> <br>
         <button class="confirm-btn" onclick="addSimulado()">Salvar</button>
     </div>

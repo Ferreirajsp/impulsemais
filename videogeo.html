@@ -3,51 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trilha de Aprendizado - Videoaula de Geografia</title>
+    <title>Trilha de Aprendizado - Videohistória</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="videohisto.css">
     <link rel="stylesheet" href="videogeo.css">
 </head>
 <body>
     <header class="head">
         <div class="top-line"></div>
-        <a href="geo.html"><img src="x.png" class="logoo" alt=""></a>
-        
         <p class="titulo"><strong>Trilha de Aprendizado Impulse - Videoaula</strong></p>
+        <div class="log"><a href="geo.html"><img src="x.png" class="logoo" alt=""></a></div>
         <nav>
             <a href="cadastro.html"><img class="icn" src="Icone perfil.png" alt=""></a>
         </nav>
     </header>
 
     <section>
-        <p class="prt"><strong>Escolha o assunto de Geografia</strong></p>
+        <p class="prt"><strong>Escolha o assunto</strong></p>
     </section>
 
-    <section class="card-container">
-        <div class="card" onclick="window.location.href='relevo.html'">
-            <p>Relevo</p>
+    <section class="card-container" id="cardContainer">
+        <div class="card">
+            <p>Primeira Guerra Mundial</p>
+            <div class="menu-icon" onclick="toggleMenu(event)">&#x22EE;</div>
+            <div class="card-menu" style="display: none;">
+                <button onclick="renameCard(this)">Renomear</button>
+                <button onclick="deleteCard(this)">Excluir</button>
+            </div>
         </div>
-        <div class="card" onclick="window.location.href='hidrografia.html'">
-            <p>Hidrografia</p>
+        <!-- Exemplo adicional de bloco -->
+        <div class="card">
+            <p>Segunda Guerra Mundial</p>
+            <div class="menu-icon" onclick="toggleMenu(event)">&#x22EE;</div>
+            <div class="card-menu" style="display: none;">
+                <button onclick="renameCard(this)">Renomear</button>
+                <button onclick="deleteCard(this)">Excluir</button>
+            </div>
         </div>
-        <div class="card" onclick="window.location.href='climatologia.html'">
-            <p>Climatologia</p>
-        </div>
-        <div class="card" onclick="window.location.href='geopolitica.html'">
-            <p>Geopolítica</p>
-        </div>
-        <div class="card" onclick="window.location.href='globalizacao.html'">
-            <p>Globalização</p>
-        </div>
-        <div class="card" onclick="window.location.href='vegetacao.html'">
-            <p>Vegetação</p>
-        </div>
-        <div class="card" onclick="window.location.href='industrializacao.html'">
-            <p>Industrialização</p>
-        </div>
-        <div class="card" onclick="window.location.href='agropecuaria.html'">
-            <p>Agropecuária</p>
-        </div>
+        <!-- Adicione os outros blocos seguindo o mesmo padrão -->
     </section>
+
+    <button id="addContentBtn" class="validate-button">Adicionar Conteúdo</button>
+
+    <div id="contentForm" style="display: none;">
+        <input type="text" id="newContentName" placeholder="Nome do conteúdo" />
+        <button onclick="addContent()">Confirmar</button>
+    </div>
 
     <footer></footer>
+
+    <script>
+        document.getElementById("addContentBtn").addEventListener("click", function() {
+            const form = document.getElementById("contentForm");
+            form.style.display = form.style.display === "none" ? "block" : "none";
+        });
+
+        function addContent() {
+            const contentName = document.getElementById("newContentName").value;
+            if (contentName.trim() !== "") {
+                const cardContainer = document.getElementById("cardContainer");
+                const newCard = document.createElement("div");
+                newCard.className = "card";
+                newCard.innerHTML = `
+                    <p>${contentName}</p>
+                    <div class="menu-icon" onclick="toggleMenu(event)">&#x22EE;</div>
+                    <div class="card-menu" style="display: none;">
+                        <button onclick="renameCard(this)">Renomear</button>
+                        <button onclick="deleteCard(this)">Excluir</button>
+                    </div>`;
+                cardContainer.appendChild(newCard);
+                document.getElementById("newContentName").value = ""; // Limpa o campo
+                document.getElementById("contentForm").style.display = "none"; // Esconde o formulário
+            } else {
+                alert("Por favor, insira um nome válido para o conteúdo.");
+            }
+        }
+
+        function toggleMenu(event) {
+            const menu = event.target.nextElementSibling;
+            menu.style.display = menu.style.display === "block" ? "none" : "block";
+        }
+
+        function deleteCard(button) {
+            const card = button.parentElement.parentElement; // Encontra o bloco
+            card.remove(); // Remove o bloco
+        }
+
+        function renameCard(button) {
+            const card = button.parentElement.parentElement; // Encontra o bloco
+            const contentName = card.querySelector('p'); // Encontra o nome do bloco
+            const newName = prompt("Digite o novo nome:", contentName.innerText);
+            if (newName) {
+                contentName.innerText = newName; // Atualiza o nome do bloco
+            }
+        }
+    </script>
 </body>
 </html>

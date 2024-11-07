@@ -10,9 +10,8 @@
 <body>
     <header class="head">
         <div class="top-line"></div>
-        <a href="histo.html"><img src="x.png" class="logoo" alt=""></a>
-        
         <p class="titulo"><strong>Trilha de Aprendizado Impulse - Videoaula</strong></p>
+        <div class="log"><a href="histo.html"><img src="x.png" class="logoo" alt=""></a></div>
         <nav>
             <a href="cadastro.html"><img class="icn" src="Icone perfil.png" alt=""></a>
         </nav>
@@ -22,45 +21,102 @@
         <p class="prt"><strong>Escolha o assunto</strong></p>
     </section>
 
-    <section class="card-container">
-        <div class="card" onclick="window.location.href='primeira-guerra.html'">
-            <p>Primeira Guerra Mundial</p>
-        </div>
-        <div class="card" onclick="window.location.href='segunda-guerra.html'">
-            <p>Segunda Guerra Mundial</p>
-        </div>
-        <div class="card" onclick="window.location.href='mesopotomia.html'">
-            <p>Mesopotâmia</p>
-        </div>
-        <div class="card" onclick="window.location.href='revolucao-francesa.html'">
-            <p>Revolução Francesa</p>
-        </div>
-        <div class="card" onclick="window.location.href='imperio-romano.html'">
-            <p>Império Romano</p>
-        </div>
-        <div class="card" onclick="window.location.href='imperio-bizantino.html'">
-            <p>Império Bizantino</p>
-        </div>
-        <div class="card" onclick="window.location.href='guerra-fria.html'">
-            <p>Guerra Fria</p>
-        </div>
-        <div class="card" onclick="window.location.href='idade-media.html'">
-            <p>Idade Média</p>
-        </div>
-        <div class="card" onclick="window.location.href='descobrimentos.html'">
-            <p>Descobrimentos Marítimos</p>
-        </div>
-        <div class="card" onclick="window.location.href='reforma-protestante.html'">
-            <p>Reforma Protestante</p>
-        </div>
-        <div class="card" onclick="window.location.href='colonizacao-america.html'">
-            <p>Colonização da América</p>
-        </div>
-        <div class="card" onclick="window.location.href='escravidao.html'">
-            <p>Escravidão no Brasil</p>
-        </div>
+    <section class="card-container" id="cardContainer">
+        <!-- Os cards serão adicionados aqui -->
     </section>
 
+    <button id="addContentBtn" class="validate-button">Adicionar Conteúdo</button>
+
+    <div id="contentForm" style="display: none;">
+        <input type="text" id="newContentName" placeholder="Nome do conteúdo" />
+        <button class="confirm-btn" onclick="addContent()">Confirmar</button>
+    </div>
+
     <footer></footer>
+
+    <script>
+        // Carregar conteúdo do localStorage
+        function loadContents() {
+            const contents = JSON.parse(localStorage.getItem('videoContents')) || [];
+            const cardContainer = document.getElementById("cardContainer");
+            cardContainer.innerHTML = ""; // Limpa o container antes de adicionar
+
+            contents.forEach(content => {
+                const card = document.createElement("div");
+                card.className = "card";
+                card.innerHTML = `
+                    <div class="menu-icon" onclick="toggleMenu(event)">&#x22EE;</div>
+                    <p>${content}</p>
+                    <div class="card-menu" style="display: none;">
+                        <button onclick="showRenameForm(this)">Renomear</button>
+                        <button onclick="deleteCard(this)">Excluir</button>
+                    </div>`;
+                cardContainer.appendChild(card);
+            });
+        }
+
+        document.getElementById("addContentBtn").addEventListener("click", function() {
+            const form = document.getElementById("contentForm");
+            form.style.display = form.style.display === "none" ? "block" : "none";
+        });
+
+        function addContent() {
+            const contentName = document.getElementById("newContentName").value;
+            if (contentName.trim() !== "") {
+                const contents = JSON.parse(localStorage.getItem('videoContents')) || [];
+                contents.push(contentName);
+                localStorage.setItem('videoContents', JSON.stringify(contents));
+                loadContents();
+                document.getElementById("newContentName").value = ""; // Limpa o campo
+                document.getElementById("contentForm").style.display = "none"; // Esconde o formulário
+            } else {
+                alert("Por favor, insira um nome válido para o conteúdo.");
+            }
+        }
+
+        function deleteCard(button) {
+            const card = button.closest('.card');
+            const contentName = card.querySelector('p').innerText;
+            let contents = JSON.parse(localStorage.getItem('videoContents')) || [];
+            contents = contents.filter(content => content !== contentName); // Remove o conteúdo
+            localStorage.setItem('videoContents', JSON.stringify(contents));
+            loadContents(); // Atualiza os cards
+        }
+
+        function showRenameForm(button) {
+            const card = button.closest('.card');
+            const renameForm = document.getElementById("renameForm");
+            renameForm.style.display = "block";
+            document.getElementById("renameContentName").value = card.querySelector('p').innerText; // Preenche com o nome atual
+        }
+
+        function renameContent() {
+            const newName = document.getElementById("renameContentName").value;
+            if (newName.trim() !== "") {
+                const contents = JSON.parse(localStorage.getItem('videoContents')) || [];
+                const card = currentCard;
+                const oldName = card.querySelector('p').innerText;
+                const index = contents.indexOf(oldName);
+                if (index !== -1) {
+                    contents[index] = newName; // Atualiza o nome
+                    localStorage.setItem('videoContents', JSON.stringify(contents));
+                    loadContents(); // Atualiza os cards
+                    document.getElementById("renameForm").style.display = "none"; // Esconde o formulário
+                }
+            } else {
+                alert("Por favor, insira um nome válido.");
+            }
+        }
+
+        // Carregar os conteúdos ao abrir a página
+        window.onload = loadContents;
+
+        // Toggle menu functionality
+        function toggleMenu(event) {
+            event.stopPropagation(); // Impede o clique de fechar o menu
+            const cardMenu = event.target.nextElementSibling;
+            cardMenu.style.display = cardMenu.style.display === "block" ? "none" : "block";
+        }
+    </script>
 </body>
 </html>

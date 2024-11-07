@@ -390,52 +390,44 @@
     opacity: 50%;
     position: relative;
     z-index: 1;
- 
-    
-  }
-  
-  /* -------------------------------------------------------------------------- */ 
-  
-  * {
+}
+
+/* -------------------------------------------------------------------------- */
+
+* {
     box-sizing: border-box;
-  }
-  
-  body {
+}
+
+body {
     margin: 0;
-  }
-  
-  /* Style the header */
-  .header {
+}
+
+/* Style the header */
+.header {
     background-color: #f1f1f1;
     padding: 20px;
     text-align: center;
     position: relative;
     z-index: 1;
- 
-  }
-  
-  /* Style the top navigation bar */
-  
-  
-  
-  
-  /* Style the topnav links */
-  .topnav a {
+}
+
+/* Style the top navigation bar */
+.topnav a {
     float: left;
     display: block;
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-  }
-  
-  /* Change color on hover */
-  .topnav a:hover {
+}
+
+/* Change color on hover */
+.topnav a:hover {
     background-color: #ddd;
     color: black;
-  }
+}
 
-  body {
+body {
     background-color: black; /* Fundo preto */
     color: white; /* Texto branco para contraste */
     font-family: 'Rubik', sans-serif; /* Definindo a fonte */
@@ -449,7 +441,6 @@
     margin: 20px; /* Espaçamento ao redor do container */
     position: relative;
     z-index: 1;
- 
 }
 
 .card {
@@ -463,7 +454,6 @@
     text-align: center; /* Centraliza o texto e botões */
     position: relative;
     z-index: 1;
- 
 }
 
 /* Estilos para o dropdown */
@@ -474,7 +464,6 @@
     text-align: center; /* Centraliza o conteúdo do dropdown */
     position: relative;
     z-index: 1;
- 
 }
 
 .dropdown-content {
@@ -488,7 +477,6 @@
     min-width: 200px;
     position: relative;
     z-index: 1;
- 
 }
 
 .dropdown-content button {
@@ -501,7 +489,6 @@
     width: 100%; /* Faz o botão ocupar toda a largura do dropdown */
     position: relative;
     z-index: 1;
- 
 }
 
 .dropdown-content button:hover {
@@ -510,4 +497,64 @@
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+/* Estilos para o botão de adicionar tema */
+.validate-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #93abc2;
+    color: #00004e;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.form-container {
+    display: none; /* Inicialmente escondido */
+    margin: 20px auto;
+    text-align: center;
+    border: 1px solid #ccc; /* Borda do formulário */
+    padding: 20px; /* Padding interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo levemente transparente */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra ao redor */
+}
+
+#themeName, #dueDate, #themeImage {
+    margin: 10px 0;
+    padding: 10px;
+    width: 250px; /* Largura do campo de entrada */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px; /* Tamanho da fonte */
+}
+
+.confirm-btn {
+    padding: 10px 15px;
+    background-color: #5cb85c; /* Cor verde */
+    color: white; /* Texto branco */
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de mão */
+    transition: background-color 0.3s; /* Efeito de transição */
+}
+
+.confirm-btn:hover {
+    background-color: #45a049; /* Tom mais escuro no hover */
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card-container {
+        grid-template-columns: 1fr;
+    }
 }

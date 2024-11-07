@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Revisão</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="revihisto.css">
+</head>
+<body>
+    <header class="head">
+        <div class="top-line"></div>
+        <p class="titulo"><strong>Página de Revisão - Impulse</strong></p>
+        <div class="log"><a href="histo.html"><img src="x.png" class="logoo" alt=""></a></div>
+        <nav>
+            <a href="cadastro.html"><img class="icn" src="Icone perfil.png" alt=""></a>
+        </nav>
+    </header>
+
+    <section>
+        <p class="prt"><strong>Revisão dos Assuntos</strong></p>
+    </section>
+
+    <section class="card-container" id="revisionCardContainer">
+        <!-- Os cards serão adicionados aqui -->
+    </section>
+
+    <footer></footer>
+
+    <script>
+        // Carregar conteúdo do localStorage
+        function loadRevisionContents() {
+            const contents = JSON.parse(localStorage.getItem('videoContents')) || [];
+            const cardContainer = document.getElementById("revisionCardContainer");
+            cardContainer.innerHTML = ""; // Limpa o container antes de adicionar
+
+            contents.forEach(content => {
+                const card = document.createElement("div");
+                card.className = "card";
+                card.innerHTML = `<p>${content}</p>`;
+                cardContainer.appendChild(card);
+            });
+        }
+
+        // Carregar os conteúdos ao abrir a página
+        window.onload = loadRevisionContents;
+    </script>
+</body>
+</html>
